@@ -1,0 +1,72 @@
+﻿@model TaskList.Models.Task
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Task</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TaskTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TaskTitle)
+            @Html.ValidationMessageFor(model => model.TaskTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TaskDesc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TaskDesc)
+            @Html.ValidationMessageFor(model => model.TaskDesc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeadLine)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeadLine)
+            @Html.ValidationMessageFor(model => model.DeadLine)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeadLine)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeadLine)
+            @Html.ValidationMessageFor(model => model.DeadLine)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.App.AppName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.App.AppName,)
+            @Html.ValidationMessageFor(model => model.App.AppName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.isCompleted)
+        </div>
+        
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+    

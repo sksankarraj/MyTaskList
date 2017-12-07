@@ -1,0 +1,43 @@
+﻿body, html {
+    
+    overflow-x:hidden;
+}
+
+/** {
+    margin: 0px;
+    padding: 0px;
+}*/
+
+.container {
+    display:block;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.task-list {
+    list-style:none;
+}
+    .task-list li {
+        width:100%;
+        display:block;
+        padding:5px;
+        margin:10px 0px;
+    }
+
+.low {
+    background-color: #d9edf7;
+    color: #31708f;
+    border:2px solid #bce8f1;
+}
+
+.medium {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+    border:2px solid #faebcc;
+}
+
+.high {
+    background-color: #f2dede;
+    color: #a94442;
+    border:2px solid #ebccd1;
+}

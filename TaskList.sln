@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskList", "TaskList\TaskList.csproj", "{B436F684-0EB4-4ADD-97D4-0B9827680131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskList.Tests", "TaskList.Tests\TaskList.Tests.csproj", "{0C21BF5D-39CB-4C0B-9128-CE1A14F9A093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B436F684-0EB4-4ADD-97D4-0B9827680131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B436F684-0EB4-4ADD-97D4-0B9827680131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B436F684-0EB4-4ADD-97D4-0B9827680131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B436F684-0EB4-4ADD-97D4-0B9827680131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C21BF5D-39CB-4C0B-9128-CE1A14F9A093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C21BF5D-39CB-4C0B-9128-CE1A14F9A093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C21BF5D-39CB-4C0B-9128-CE1A14F9A093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C21BF5D-39CB-4C0B-9128-CE1A14F9A093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

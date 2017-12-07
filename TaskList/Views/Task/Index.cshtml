@@ -1,0 +1,29 @@
+﻿@model  IEnumerable<TaskList.Models.Task>
+
+@{
+    ViewBag.Title = "Your Tasks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Your Tasks</h2>
+
+@foreach (var task in Model)
+{
+
+    var PrClass = "low";
+    if (task.Priority.PriorityName == "High")
+    {
+        PrClass = "high";
+    }
+    else if (task.Priority.PriorityName == "Medium")
+    {
+        PrClass = "medium";
+    }
+    
+    <ul class="task-list">
+        <li class="@PrClass">
+            <h4>@task.TaskTitle</h4>
+            <p>@task.TaskDesc</p>
+        </li>
+    </ul>
+}
